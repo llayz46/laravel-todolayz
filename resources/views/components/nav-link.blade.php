@@ -1,4 +1,4 @@
-@props(['active', 'type' => 'link', 'color' => 'text-body'])
+@props(['active', 'type' => 'link', 'color' => 'text-body', 'tag' => 'a'])
 
 @php
     $classes = ($active ?? false)
@@ -11,9 +11,9 @@
         {{ $slot }}
     </a>
 @elseif ($type === 'button-link')
-    <a @class(['text-base font-normal px-3.5 py-2.5 rounded-md bg-primary-500 text-background hover:bg-primary-400']) {{ $attributes }}>
+    <{{ $tag }} @class(['text-base font-normal px-3.5 py-2.5 rounded-md bg-primary-500 text-background hover:bg-primary-400']) {{ $attributes }}>
         {{ $slot }}
-    </a>
+    </{{ $tag }}>
 @elseif ($type === 'arrow-link')
     <a class="text-base font-normal {{ $color }}" {{ $attributes }}>
         {{ $slot }} <span aria-hidden="true">→</span>

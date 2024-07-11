@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,7 +8,7 @@
     <title>Home - {{ config('app.name') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="h-full">
     {{ $slot }}
 </body>
 </html>

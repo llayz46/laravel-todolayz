@@ -2,7 +2,7 @@
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="{{ route('home') }}" class="-m-1.5 p-1.5">
-                <x-application-logo class="h-8 w-auto">{{ config('app.name') }}</x-application-logo>
+                <x-application-logo class="h-8 w-auto text-primary-500">{{ config('app.name') }}</x-application-logo>
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -18,8 +18,17 @@
             <x-nav-link href="#" type="link" :active="false">Todos</x-nav-link>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-6">
-            <x-nav-link href="#" type="link">Log in</x-nav-link>
-            <x-nav-link href="#" type="button-link">Sign up</x-nav-link>
+            @auth
+                <form action="{{ route('auth.logout') }}" method="post">
+                    @method('DELETE')
+                    @csrf
+                    <x-nav-link tag="button" type="button-link">Log out</x-nav-link>
+                </form>
+            @endauth
+            @guest
+                <x-nav-link href="{{ route('auth.login') }}" type="link">Log in</x-nav-link>
+                <x-nav-link href="{{ route('auth.register') }}" type="button-link">Sign up</x-nav-link>
+            @endguest
         </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->

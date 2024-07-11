@@ -45,5 +45,6 @@ export default {
         require('tailwindcss'),
         require('autoprefixer'),
         require('postcss-custom-properties'),
+        require('@tailwindcss/forms')
     ],
 }
