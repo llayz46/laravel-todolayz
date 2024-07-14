@@ -1,11 +1,11 @@
-<x-layout>
+<x-layout pageTitle="Home">
     <x-navigation-header></x-navigation-header>
 
     <main class="isolate">
 {{--        Hero --}}
         <div class="relative pt-14">
             <div class="absolute inset-x-0 -top-48 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-96" aria-hidden="true">
-                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(83% 45.6%, 82.4% 30.2%, 80.4% 15.6%, 63.4% 5%, 61.2% 16.2%, 49% 20%, 64% 34.6%, 62.6% 53%, 60.8% 72%, 50.8% 81%, 32.2% 69.4%, 47.4% 58.2%, 62.8% 53%, 45.2% 34.4%, 27.4% 43.6%, 26.8% 66%, 3.4% 63.8%, 11.6% 78.4%, 32.2% 86.8%, 9.8% 87.2%, 17.8% 100%, 27.6% 94.8%, 31.6% 86.4%, 51.6% 94%, 81.4% 90.8%, 68% 73.2%, 77.4% 53.8%)"></div>
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 dark:opacity-5 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(83% 45.6%, 82.4% 30.2%, 80.4% 15.6%, 63.4% 5%, 61.2% 16.2%, 49% 20%, 64% 34.6%, 62.6% 53%, 60.8% 72%, 50.8% 81%, 32.2% 69.4%, 47.4% 58.2%, 62.8% 53%, 45.2% 34.4%, 27.4% 43.6%, 26.8% 66%, 3.4% 63.8%, 11.6% 78.4%, 32.2% 86.8%, 9.8% 87.2%, 17.8% 100%, 27.6% 94.8%, 31.6% 86.4%, 51.6% 94%, 81.4% 90.8%, 68% 73.2%, 77.4% 53.8%)"></div>
             </div>
             <div class="py-24 sm:py-32">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 dark:opacity-5 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
         </div>
 {{--        Hero --}}
@@ -81,7 +81,7 @@
 {{--        Pricing --}}
         <div class="py-24 relative">
             <div class="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40" aria-hidden="true">
-                <div class="relative left-36 aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 sm:w-[72.1875rem]" style="clip-path: polygon(18.6% 7.4%, 37.8% 1.6%, 50.4% 7.6%, 58.4% 15.4%, 68.8% 19.8%, 78% 31.4%, 74.4% 40.4%, 62.4% 39.4%, 51% 30.8%, 58.4% 15.4%, 36.6% 19.8%, 24% 23.8%, 30.2% 34.4%, 37.4% 45.2%, 49% 46%, 56.2% 58%, 58% 70.6%, 47.8% 81.8%, 36.8% 92.6%, 18.4% 92.4%, 18.2% 78.4%, 23% 68%, 7.2% 57.6%, 6.4% 44.6%, 13% 33.2%, 18.2% 23.8%, 8.4% 14.4%, 1.4% 0.8%, 12.8% 2.8%)"></div>
+                <div class="relative left-36 aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 dark:opacity-5 sm:w-[72.1875rem]" style="clip-path: polygon(18.6% 7.4%, 37.8% 1.6%, 50.4% 7.6%, 58.4% 15.4%, 68.8% 19.8%, 78% 31.4%, 74.4% 40.4%, 62.4% 39.4%, 51% 30.8%, 58.4% 15.4%, 36.6% 19.8%, 24% 23.8%, 30.2% 34.4%, 37.4% 45.2%, 49% 46%, 56.2% 58%, 58% 70.6%, 47.8% 81.8%, 36.8% 92.6%, 18.4% 92.4%, 18.2% 78.4%, 23% 68%, 7.2% 57.6%, 6.4% 44.6%, 13% 33.2%, 18.2% 23.8%, 8.4% 14.4%, 1.4% 0.8%, 12.8% 2.8%)"></div>
             </div>
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-4xl text-center">
@@ -164,8 +164,8 @@
                         <dd class="order-first text-3xl font-semibold tracking-tight text-title sm:text-5xl">5.6 million</dd>
                     </div>
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                        <dt class="text-base leading-7 text-gray-600">Overall Tasks Completed</dt>
-                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">241 million</dd>
+                        <dt class="text-base leading-7 text-body">Overall Tasks Completed</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-title sm:text-5xl">241 million</dd>
                     </div>
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
                         <dt class="text-base leading-7 text-body">New users annually</dt>
@@ -179,18 +179,18 @@
 {{--        CTA --}}
         <div class="relative -z-10 my-32 px-6 lg:px-8">
             <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 transform-gpu justify-center overflow-hidden blur-3xl sm:bottom-0 sm:right-[calc(50%-6rem)] sm:top-auto sm:translate-y-0 sm:transform-gpu sm:justify-end" aria-hidden="true">
-                <div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-primary-500 to-primary-50 opacity-25" style="clip-path: polygon(44.6% 60.9%, 51.5% 76.9%, 56.9% 66.9%, 62.4% 52.4%, 72.9% 52.4%, 79% 45.9%, 93.2% 52.4%, 91.3% 36.3%, 77.5% 31.1%, 67.4% 20.1%, 54.9% 24.6%, 48.8% 42.6%, 44.6% 60.9%, 42.6% 42.4%, 43% 25.6%, 30.7% 36.1%, 22.1% 33.3%, 20.1% 23.1%, 22.3% 8%, 10.2% 6.3%, 0% 0%, 16.9% 45.4%, 9.4% 58.6%, 6.2% 76.9%, 24.8% 73.4%, 31.9% 90%, 36.2% 74.9%, 44.6% 60.9%)"></div>
+                <div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-primary-500 to-primary-50 opacity-30 dark:opacity-5" style="clip-path: polygon(44.6% 60.9%, 51.5% 76.9%, 56.9% 66.9%, 62.4% 52.4%, 72.9% 52.4%, 79% 45.9%, 93.2% 52.4%, 91.3% 36.3%, 77.5% 31.1%, 67.4% 20.1%, 54.9% 24.6%, 48.8% 42.6%, 44.6% 60.9%, 42.6% 42.4%, 43% 25.6%, 30.7% 36.1%, 22.1% 33.3%, 20.1% 23.1%, 22.3% 8%, 10.2% 6.3%, 0% 0%, 16.9% 45.4%, 9.4% 58.6%, 6.2% 76.9%, 24.8% 73.4%, 31.9% 90%, 36.2% 74.9%, 44.6% 60.9%)"></div>
             </div>
             <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enhance your productivity.<br>Start using our app today.</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-title sm:text-4xl">Enhance your productivity.<br>Start using our app today.</h2>
+                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-body">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
                     <x-nav-link type="button-link" href="#">Get started</x-nav-link>
                     <x-nav-link type="arrow-link" href="#">Learn more</x-nav-link>
                 </div>
             </div>
             <div class="absolute left-1/2 right-0 top-full -z-10 hidden -translate-y-1/2 transform-gpu overflow-hidden blur-3xl sm:block" aria-hidden="true">
-                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-primary-500 to-primary-50 opacity-30 dark:opacity-5" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
         </div>
 {{--        CTA --}}

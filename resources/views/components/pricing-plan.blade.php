@@ -8,7 +8,7 @@
     };
 @endphp
 
-<div @class(['flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10', $classes])>
+<div @class(['flex flex-col justify-between rounded-3xl bg-background p-8 ring-1 ring-gray-200 dark:ring-gray-700 xl:p-10', $classes])>
     <div>
         <div class="flex items-center justify-between gap-x-4">
             <h3 id="tier-{{ strtolower($planName) }}" class="text-lg font-semibold leading-8 text-title">{{ $planName }}</h3>
@@ -29,5 +29,5 @@
             @endforeach
         </ul>
     </div>
-    <x-nav-link href="#" type="border-link" class="mt-8 {{ $side === 'middle' ? 'bg-primary-500 text-white shadow-sm hover:bg-primary-400' : 'text-primary-500 ring-1 ring-inset ring-primary-200 hover:ring-primary-300' }}" aria-describedby="tier-{{ strtolower($planName) }}">Buy plan</x-nav-link>
+    <x-nav-link href="#" type="border-link" class="mt-8 {{ $side === 'middle' ? 'bg-primary-500 text-white shadow-sm hover:bg-primary-400 dark:hover:bg-primary-600' : 'text-primary-500 ring-1 ring-inset ring-primary-200 dark:ring-primary-600 hover:ring-primary-300 dark:hover:ring-primary-800' }}" aria-describedby="tier-{{ strtolower($planName) }}">Buy plan</x-nav-link>
 </div>

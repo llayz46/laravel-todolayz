@@ -16,8 +16,12 @@
         <div class="hidden lg:flex lg:gap-x-12">
             <x-nav-link :href="route('home')" type="link" :active="request()->routeIs('home')">Home</x-nav-link>
             <x-nav-link href="#" type="link" :active="false">Todos</x-nav-link>
+            @auth
+                <x-nav-link href="{{ route('profile.edit') }}" type="link" :active="\Illuminate\Support\Str::startsWith(request()->route()->getName(), 'profile.')">Profile</x-nav-link>
+            @endauth
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-6">
+            <x-nav-link tag="button" type="button-link" :accent="true" class="flex" data-action="click->darkmode#toggleMode" data-darkmode-target="themeToggle"></x-nav-link>
             @auth
                 <form action="{{ route('auth.logout') }}" method="post">
                     @method('DELETE')

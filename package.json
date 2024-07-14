@@ -6,6 +6,8 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@hotwired/stimulus": "^3.2.2",
+        "@hotwired/strada": "^1.0.0-beta1",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0",
@@ -16,6 +18,8 @@
     "dependencies": {
         "@tailwindcss/forms": "^0.5.7",
         "postcss-custom-properties": "^13.3.12",
-        "postcss-import": "^16.1.0"
+        "postcss-import": "^16.1.0",
+        "stimulus-use": "^0.52.2",
+        "stimulus-vite-helpers": "^3.1.0"
     }
 }

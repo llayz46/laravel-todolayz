@@ -7,6 +7,11 @@
             <div class="pb-6">
                 <x-nav-link href="#" type="text-link">Todos</x-nav-link>
             </div>
+            @auth
+                <div class="pb-6">
+                    <x-nav-link href="{{ route('profile.edit') }}" type="text-link">Profile</x-nav-link>
+                </div>
+            @endauth
         </nav>
         <div class="mt-10 flex justify-center space-x-10">
             <a href="https://llayz.fr" class="text-body hover:text-title">
