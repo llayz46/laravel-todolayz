@@ -11,7 +11,10 @@
 <body class="h-full bg-background transition-colors" data-darkmode-target="body" data-controller="darkmode">
     {{ $slot }}
     @if(session()->has('success'))
-        <x-notification></x-notification>
+        <x-notification status-title="Success !" status="success"></x-notification>
+    @endif
+    @if(session()->has('error'))
+        <x-notification status-title="Error !" status="error"></x-notification>
     @endif
     @vite('resources/js/app.js')
 </body>

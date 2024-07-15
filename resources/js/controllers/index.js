@@ -5,6 +5,9 @@
 import { Stimulus } from '../libs/stimulus'
 
 
+import AutoSubmitController from './auto_submit_controller'
+Stimulus.register('auto-submit', AutoSubmitController)
+
 import DarkmodeController from './darkmode_controller'
 Stimulus.register('darkmode', DarkmodeController)
 

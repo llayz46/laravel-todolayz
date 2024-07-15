@@ -2,6 +2,8 @@ import { Controller } from "@hotwired/stimulus"
 import { useTransition } from "stimulus-use";
 
 export default class extends Controller {
+    static targets = ['modal']
+
     static values = {
         autoClose: Number
     }
@@ -23,5 +25,13 @@ export default class extends Controller {
 
     close() {
         this.leave();
+    }
+
+    open() {
+        this.modalTarget.classList.remove('hidden');
+    }
+
+    closeModal() {
+        this.modalTarget.classList.add('hidden');
     }
 }

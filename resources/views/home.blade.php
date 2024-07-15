@@ -1,7 +1,7 @@
 <x-layout pageTitle="Home">
     <x-navigation-header></x-navigation-header>
 
-    <main class="isolate">
+    <main class="isolate container mx-auto sm:px-6 lg:px-8">
 {{--        Hero --}}
         <div class="relative pt-14">
             <div class="absolute inset-x-0 -top-48 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-96" aria-hidden="true">

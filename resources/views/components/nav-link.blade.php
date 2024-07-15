@@ -15,7 +15,7 @@
         {{ $slot }}
     </a>
 @elseif ($type === 'button-link')
-    <{{ $tag }} @class(['text-base font-normal px-3.5 py-2.5 rounded-md text-white flex gap-2 items-center', $accentClasses]) {{ $attributes }}>
+    <{{ $tag }} @class(['text-base font-normal px-3.5 py-2.5 rounded-md text-white flex gap-2 items-center w-fit', $accentClasses]) {{ $attributes }}>
         {{ $slot }}
     </{{ $tag }}>
 @elseif ($type === 'arrow-link')

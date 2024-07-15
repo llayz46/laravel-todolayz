@@ -1,7 +1,7 @@
-@props(['file' => false, 'user', 'route', 'method', 'formTitle', 'formDescription'])
+@props(['file' => false, 'user', 'route', 'method', 'formTitle', 'formDescription', 'profile' => true, 'params' => null])
 
 <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <form action="{{ route($route) }}" method="post" @if($file) enctype="multipart/form-data" @endif>
+    <form action="@if($params === null) {{ route($route) }} @else {{ route($route, $params) }} @endif" method="post" @if($file) enctype="multipart/form-data" @endif>
         @csrf
         @method($method)
         <div class="space-y-12 mt-10">
@@ -18,7 +18,7 @@
                 <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 md:col-span-2">
                     {{ $slot }}
                     <div class="sm:col-span-4">
-                        <x-button type="submit" class="w-fit">Update</x-button>
+                        <x-button type="submit" class="w-fit">@if($profile) Update @else Create list @endif</x-button>
                     </div>
                 </div>
             </div>
