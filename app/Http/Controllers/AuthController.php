@@ -47,7 +47,7 @@ class AuthController extends Controller
     public function store(RegisterRequest $registerRequest)
     {
         $userData = $registerRequest->validated();
-        $userData['password'] = Hash::make($userData['password']);
+//        $userData['password'] = Hash::make($userData['password']);
 
         $user = User::create($userData);
 
